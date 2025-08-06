@@ -16,7 +16,7 @@ LOG_FILE_PATH = 'spamfilter.log'  # 系统日志文件路径，记录运行状�
 # ====================================
 
 # AI API密钥配置
-SILICONFLOW_API_KEY = "sk-ujivdeujodvpmjuajmwiswcujubhpnbjluvxkeputdodliqk"
+SILICONFLOW_API_KEY = "your API"
 
 # SiliconFlow API接口地址
 AI_API_URL = "https://api.siliconflow.cn/v1/chat/completions"
@@ -75,6 +75,7 @@ INBOX_PER_PAGE = 20
 # 日志查看器配置
 # 显示日志文件的最后行数，避免加载过大的日志文件
 LOG_VIEWER_MAX_LINES = 100
+
 
 
 
