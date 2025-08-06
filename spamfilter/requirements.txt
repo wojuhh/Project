@@ -1,0 +1,9 @@
+# Web 框架
+flask
+
+# 异步 SMTP 服务器
+aiosmtpd
+
+# 异步/同步 HTTP 请求
+aiohttp
+requests

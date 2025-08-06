@@ -1,0 +1,147 @@
+{% extends "layout.html" %}
+
+{% block title %}收件箱管理 - {{ super() }}{% endblock %}
+
+{% block extra_head %}
+<style>
+    .table td, .table th { vertical-align: middle; }
+    .mail-body { max-width: 400px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+</style>
+{% endblock %}
+
+{% block content %}
+<h2>收件箱邮件</h2>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover align-middle">
+      <thead class="table-light">
+      <tr>
+        <th><input type="checkbox" id="select-all-mails" title="全选/全不选"></th>
+        <th>ID</th>
+        <th>发件人</th>
+        <th>主题与正文</th>
+        <th>状态</th>
+        <th>操作</th>
+        <th>时间</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for mail in mails %}
+      <tr>
+        <td><input type="checkbox" class="mail-checkbox" value="{{ mail[0] }}"></td>
+        <td>{{ mail[0] }}</td>
+        <td>{{ mail[1] }}</td>
+        <td>
+            <strong>
+                <a href="{{ url_for('view_mail', mail_id=mail[0], page=current_page) }}" title="查看邮件详情">
+                    {{ mail[2] or '(无主题)' }}
+                </a>
+            </strong>
+            <div class="text-muted mail-body" title="{{ mail[3] }}">{{ mail[3] }}</div>
+        </td>
+        <td>
+            {% if mail[4] == 1 %} <span class="badge bg-danger">垃圾</span>
+            {% elif mail[4] == 0 %} <span class="badge bg-success">正常</span>
+            {% else %} <span class="badge bg-secondary">未标注</span>
+            {% endif %}
+        </td>
+        <td>
+            <div class="btn-group btn-group-sm">
+                <a href="{{ url_for('mark_mail', mail_id=mail[0], label=1, page=current_page) }}" class="btn btn-outline-warning" title="标为垃圾">垃圾</a>
+                <a href="{{ url_for('mark_mail', mail_id=mail[0], label=0, page=current_page) }}" class="btn btn-outline-success" title="标为正常">正常</a>
+                <a href="{{ url_for('delete_mail', mail_id=mail[0], page=current_page) }}" class="btn btn-outline-danger" onclick="return confirm('确定永久删除?');" title="删除">删除</a>
+            </div>
+        </td>
+        <td>{{ mail[5][:19] }}</td>
+      </tr>
+      {% else %}
+      <tr><td colspan="7" class="text-center">收件箱为空。</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+</div>
+
+{% if total_pages > 1 %}
+<nav aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+    <li class="page-item {% if current_page <= 1 %}disabled{% endif %}">
+      <a class="page-link" href="{{ url_for('admin_inbox', page=current_page-1) }}">上一页</a>
+    </li>
+    {% for p in pagination_range %}
+      {% if p == '...' %}
+        <li class="page-item disabled"><span class="page-link">...</span></li>
+      {% else %}
+        <li class="page-item {% if p == current_page %}active{% endif %}">
+          <a class="page-link" href="{{ url_for('admin_inbox', page=p) }}">{{ p }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+    <li class="page-item {% if current_page >= total_pages %}disabled{% endif %}">
+      <a class="page-link" href="{{ url_for('admin_inbox', page=current_page+1) }}">下一页</a>
+    </li>
+  </ul>
+</nav>
+{% endif %}
+
+<div class="mt-4">
+    <button id="extract-keywords-btn" class="btn btn-info">从选中邮件提取关键词</button>
+    <div id="extract-keywords-info" class="alert mt-3" role="alert" style="display: none; white-space: pre-wrap; font-family: monospace;"></div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.getElementById('select-all-mails').addEventListener('change', function() {
+    document.querySelectorAll('.mail-checkbox').forEach(cb => cb.checked = this.checked);
+});
+
+document.getElementById('extract-keywords-btn').onclick = async function() {
+    const btn = this;
+    const infoDiv = document.getElementById('extract-keywords-info');
+    const selectedIds = Array.from(document.querySelectorAll('.mail-checkbox:checked')).map(cb => parseInt(cb.value));
+
+    if (selectedIds.length === 0) {
+        infoDiv.style.display = 'block';
+        infoDiv.className = 'alert alert-warning';
+        infoDiv.textContent = '请至少选择一封邮件。';
+        return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = '正在提取...';
+    infoDiv.style.display = 'block';
+    infoDiv.className = 'alert alert-info';
+    infoDiv.textContent = '正在向 AI 服务请求关键词，请稍候...';
+
+    try {
+        const resp = await fetch("{{ url_for('extract_keywords') }}", {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ mail_ids: selectedIds }),
+        });
+        const data = await resp.json();
+
+        if (data.success) {
+            infoDiv.className = 'alert alert-success';
+            let msg = `从 ${data.total_processed} 封邮件中完成提取。\n`;
+            msg += data.extracted_keywords?.length > 0 ? `新增关键词: ${data.extracted_keywords.join(', ')}\n` : '未发现新的关键词。\n';
+            if (data.failed_mail_ids?.length > 0) {
+                msg += `注意：部分邮件处理失败 (ID: ${data.failed_mail_ids.join(', ')})。`;
+            }
+            infoDiv.textContent = msg;
+        } else {
+            infoDiv.className = 'alert alert-danger';
+            infoDiv.textContent = '关键词提取失败：' + (data.error || '未知错误');
+        }
+    } catch (e) {
+        infoDiv.className = 'alert alert-danger';
+        infoDiv.textContent = '请求失败：' + e;
+    } finally {
+        btn.disabled = false;
+        btn.textContent = '从选中邮件提取关键词';
+        document.getElementById('select-all-mails').checked = false;
+        document.querySelectorAll('.mail-checkbox').forEach(cb => cb.checked = false);
+    }
+};
+</script>
+{% endblock %}

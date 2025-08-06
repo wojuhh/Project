@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block title %}名单与关键词管理 - {{ super() }}{% endblock %}
+
+{% block content %}
+<h2>名单与关键词管理</h2>
+
+<div class="row mt-4">
+    <!-- Blacklist -->
+    <div class="col-md-6">
+        <h4>黑名单 (Blacklist)</h4>
+        <form method="post" action="{{ url_for('admin_lists') }}" class="input-group mb-3">
+            <input type="email" name="black_add" class="form-control" placeholder="添加黑名单邮箱" required>
+            <button class="btn btn-dark" type="submit">添加</button>
+        </form>
+        <ul class="list-group" style="min-height: 200px; max-height: 400px; overflow-y: auto;">
+            {% for email in black %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                {{ email }}
+                <a href="{{ url_for('remove_from_list', table='blacklist', value=email) }}" class="btn-close" aria-label="删除"></a>
+            </li>
+            {% else %}
+            <li class="list-group-item text-secondary">黑名单为空</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <!-- Whitelist -->
+    <div class="col-md-6">
+        <h4>白名单 (Whitelist)</h4>
+        <form method="post" action="{{ url_for('admin_lists') }}" class="input-group mb-3">
+            <input type="email" name="white_add" class="form-control" placeholder="添加白名单邮箱" required>
+            <button class="btn btn-primary" type="submit">添加</button>
+        </form>
+        <ul class="list-group" style="min-height: 200px; max-height: 400px; overflow-y: auto;">
+            {% for email in white %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                {{ email }}
+                <a href="{{ url_for('remove_from_list', table='whitelist', value=email) }}" class="btn-close" aria-label="删除"></a>
+            </li>
+            {% else %}
+            <li class="list-group-item text-secondary">白名单为空</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<!-- Keyword Management -->
+<div class="row mt-4">
+    <div class="col-12">
+        <h4>垃圾邮件关键词 (Keywords)</h4>
+        <form method="post" action="{{ url_for('admin_lists') }}" class="input-group mb-3">
+            <input type="text" name="keyword_add" class="form-control" placeholder="添加关键词 (e.g., 免费赢取)" required>
+            <button class="btn btn-warning" type="submit">添加</button>
+        </form>
+        <div class="d-flex flex-wrap gap-2 border p-3 rounded" style="min-height: 100px;">
+            {% for kw in keywords %}
+            <span class="badge bg-secondary p-2 d-flex align-items-center">
+                {{ kw }}
+                <a href="{{ url_for('remove_from_list', table='keywords', value=kw) }}" class="ms-2 text-white text-decoration-none" aria-label="删除">&times;</a>
+            </span>
+            {% else %}
+            <p class="text-secondary m-0">无自定义关键词</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

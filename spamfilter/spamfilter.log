@@ -1,0 +1,392 @@
+2025-06-24 09:03:26,874 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 09:03:26,875 - mail.log - INFO - Peer: ('127.0.0.1', 65440)
+2025-06-24 09:03:26,875 - mail.log - INFO - ('127.0.0.1', 65440) handling connection
+2025-06-24 09:03:26,875 - mail.log - INFO - ('127.0.0.1', 65440) EOF received
+2025-06-24 09:03:26,875 - smtp_server - INFO - SMTP 服务器已在 127.0.0.1:1025 启动...
+2025-06-24 09:03:26,875 - mail.log - INFO - ('127.0.0.1', 65440) Connection lost during _handle_client()
+2025-06-24 09:03:26,875 - mail.log - INFO - ('127.0.0.1', 65440) connection lost
+2025-06-24 09:07:49,110 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 09:07:49,110 - mail.log - INFO - Peer: ('127.0.0.1', 49170)
+2025-06-24 09:07:49,110 - mail.log - INFO - ('127.0.0.1', 49170) handling connection
+2025-06-24 09:07:49,116 - mail.log - INFO - ('127.0.0.1', 49170) >> b'ehlo [10.11.188.142]'
+2025-06-24 09:07:49,117 - mail.log - INFO - ('127.0.0.1', 49170) >> b'mail FROM:<test@example.com> size=196'
+2025-06-24 09:07:49,117 - mail.log - INFO - ('127.0.0.1', 49170) sender: test@example.com
+2025-06-24 09:07:49,117 - mail.log - INFO - ('127.0.0.1', 49170) >> b'rcpt TO:<user@example.com>'
+2025-06-24 09:07:49,117 - mail.log - INFO - ('127.0.0.1', 49170) recip: user@example.com
+2025-06-24 09:07:49,117 - mail.log - INFO - ('127.0.0.1', 49170) >> b'data'
+2025-06-24 09:07:49,118 - smtp_server - INFO - 收到邮件: From <test@example.com> To <['user@example.com']>
+2025-06-24 09:07:53,355 - ai_service - INFO - AI_SERVICE: 原始回复: '0'
+2025-06-24 09:07:53,356 - smtp_server - INFO - 结果: ALLOWED (Passed all checks) - From: test@example.com
+2025-06-24 09:07:53,376 - mail.log - INFO - ('127.0.0.1', 49170) >> b'QUIT'
+2025-06-24 09:07:53,376 - mail.log - INFO - ('127.0.0.1', 49170) Connection lost during _handle_client()
+2025-06-24 09:07:53,377 - mail.log - INFO - ('127.0.0.1', 49170) connection lost
+2025-06-24 09:12:27,631 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 09:12:27,633 - mail.log - INFO - Peer: ('127.0.0.1', 49293)
+2025-06-24 09:12:27,633 - mail.log - INFO - ('127.0.0.1', 49293) handling connection
+2025-06-24 09:12:27,637 - mail.log - INFO - ('127.0.0.1', 49293) >> b'ehlo [10.11.188.142]'
+2025-06-24 09:12:27,638 - mail.log - INFO - ('127.0.0.1', 49293) >> b'mail FROM:<test@example.com> size=196'
+2025-06-24 09:12:27,639 - mail.log - INFO - ('127.0.0.1', 49293) sender: test@example.com
+2025-06-24 09:12:27,639 - mail.log - INFO - ('127.0.0.1', 49293) >> b'rcpt TO:<user@example.com>'
+2025-06-24 09:12:27,639 - mail.log - INFO - ('127.0.0.1', 49293) recip: user@example.com
+2025-06-24 09:12:27,639 - mail.log - INFO - ('127.0.0.1', 49293) >> b'data'
+2025-06-24 09:12:27,639 - smtp_server - INFO - 收到邮件: From <test@example.com> To <['user@example.com']>
+2025-06-24 09:12:32,352 - ai_service - INFO - AI_SERVICE: 原始回复: '0'
+2025-06-24 09:12:32,352 - smtp_server - INFO - 结果: ALLOWED (Passed all checks) - From: test@example.com
+2025-06-24 09:12:32,359 - mail.log - INFO - ('127.0.0.1', 49293) >> b'QUIT'
+2025-06-24 09:12:32,360 - mail.log - INFO - ('127.0.0.1', 49293) Connection lost during _handle_client()
+2025-06-24 09:12:32,360 - mail.log - INFO - ('127.0.0.1', 49293) connection lost
+2025-06-24 09:13:26,230 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 09:13:26,230 - mail.log - INFO - Peer: ('127.0.0.1', 49314)
+2025-06-24 09:13:26,231 - mail.log - INFO - ('127.0.0.1', 49314) handling connection
+2025-06-24 09:13:26,231 - mail.log - INFO - ('127.0.0.1', 49314) >> b'ehlo [10.11.188.142]'
+2025-06-24 09:13:26,232 - mail.log - INFO - ('127.0.0.1', 49314) >> b'mail FROM:<test@example.com> size=276'
+2025-06-24 09:13:26,232 - mail.log - INFO - ('127.0.0.1', 49314) sender: test@example.com
+2025-06-24 09:13:26,232 - mail.log - INFO - ('127.0.0.1', 49314) >> b'rcpt TO:<user@example.com>'
+2025-06-24 09:13:26,232 - mail.log - INFO - ('127.0.0.1', 49314) recip: user@example.com
+2025-06-24 09:13:26,232 - mail.log - INFO - ('127.0.0.1', 49314) >> b'data'
+2025-06-24 09:13:26,232 - smtp_server - INFO - 收到邮件: From <test@example.com> To <['user@example.com']>
+2025-06-24 09:13:34,465 - ai_service - INFO - AI_SERVICE: 原始回复: '1'
+2025-06-24 09:13:34,465 - smtp_server - WARNING - 结果: BLOCKED (AI Model) - From: test@example.com
+2025-06-24 09:13:34,481 - mail.log - INFO - ('127.0.0.1', 49314) >> b'rset'
+2025-06-24 09:13:34,481 - mail.log - INFO - ('127.0.0.1', 49314) >> b'QUIT'
+2025-06-24 09:13:34,481 - mail.log - INFO - ('127.0.0.1', 49314) Connection lost during _handle_client()
+2025-06-24 09:13:34,481 - mail.log - INFO - ('127.0.0.1', 49314) connection lost
+2025-06-24 09:15:41,716 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 09:15:41,717 - mail.log - INFO - Peer: ('127.0.0.1', 49382)
+2025-06-24 09:15:41,717 - mail.log - INFO - ('127.0.0.1', 49382) handling connection
+2025-06-24 09:15:41,722 - mail.log - INFO - ('127.0.0.1', 49382) >> b'ehlo [10.11.188.142]'
+2025-06-24 09:15:41,723 - mail.log - INFO - ('127.0.0.1', 49382) >> b'mail FROM:<test@example.com> size=196'
+2025-06-24 09:15:41,723 - mail.log - INFO - ('127.0.0.1', 49382) sender: test@example.com
+2025-06-24 09:15:41,723 - mail.log - INFO - ('127.0.0.1', 49382) >> b'rcpt TO:<user@example.com>'
+2025-06-24 09:15:41,723 - mail.log - INFO - ('127.0.0.1', 49382) recip: user@example.com
+2025-06-24 09:15:41,723 - mail.log - INFO - ('127.0.0.1', 49382) >> b'data'
+2025-06-24 09:15:41,723 - smtp_server - INFO - 收到邮件: From <test@example.com> To <['user@example.com']>
+2025-06-24 09:15:46,714 - ai_service - INFO - AI_SERVICE: 原始回复: '0'
+2025-06-24 09:15:46,715 - smtp_server - INFO - 结果: ALLOWED (Passed all checks) - From: test@example.com
+2025-06-24 09:15:46,724 - mail.log - INFO - ('127.0.0.1', 49382) >> b'QUIT'
+2025-06-24 09:15:46,725 - mail.log - INFO - ('127.0.0.1', 49382) Connection lost during _handle_client()
+2025-06-24 09:15:46,725 - mail.log - INFO - ('127.0.0.1', 49382) connection lost
+2025-06-24 09:16:21,224 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 09:16:21,225 - mail.log - INFO - Peer: ('127.0.0.1', 49402)
+2025-06-24 09:16:21,225 - mail.log - INFO - ('127.0.0.1', 49402) handling connection
+2025-06-24 09:16:21,225 - mail.log - INFO - ('127.0.0.1', 49402) EOF received
+2025-06-24 09:16:21,225 - smtp_server - INFO - SMTP 服务器已在 127.0.0.1:1025 启动...
+2025-06-24 09:16:21,225 - mail.log - INFO - ('127.0.0.1', 49402) Connection lost during _handle_client()
+2025-06-24 09:16:21,225 - mail.log - INFO - ('127.0.0.1', 49402) connection lost
+2025-06-24 09:16:24,146 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 09:16:24,146 - mail.log - INFO - Peer: ('127.0.0.1', 49404)
+2025-06-24 09:16:24,146 - mail.log - INFO - ('127.0.0.1', 49404) handling connection
+2025-06-24 09:16:24,148 - mail.log - INFO - ('127.0.0.1', 49404) >> b'ehlo [10.11.188.142]'
+2025-06-24 09:16:24,148 - mail.log - INFO - ('127.0.0.1', 49404) >> b'mail FROM:<test@example.com> size=196'
+2025-06-24 09:16:24,149 - mail.log - INFO - ('127.0.0.1', 49404) sender: test@example.com
+2025-06-24 09:16:24,149 - mail.log - INFO - ('127.0.0.1', 49404) >> b'rcpt TO:<user@example.com>'
+2025-06-24 09:16:24,149 - mail.log - INFO - ('127.0.0.1', 49404) recip: user@example.com
+2025-06-24 09:16:24,149 - mail.log - INFO - ('127.0.0.1', 49404) >> b'data'
+2025-06-24 09:16:24,149 - smtp_server - INFO - 收到邮件: From <test@example.com> To <['user@example.com']>
+2025-06-24 09:16:24,363 - ai_service - ERROR - AI_SERVICE: 预测时发生错误: 400, message='Bad Request', url='https://api.siliconflow.cn/v1/chat/completions'
+2025-06-24 09:16:24,363 - smtp_server - INFO - 结果: ALLOWED (Passed all checks) - From: test@example.com
+2025-06-24 09:16:24,379 - mail.log - INFO - ('127.0.0.1', 49404) >> b'QUIT'
+2025-06-24 09:16:24,379 - mail.log - INFO - ('127.0.0.1', 49404) Connection lost during _handle_client()
+2025-06-24 09:16:24,379 - mail.log - INFO - ('127.0.0.1', 49404) connection lost
+2025-06-24 09:16:56,443 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 09:16:56,444 - mail.log - INFO - Peer: ('127.0.0.1', 49421)
+2025-06-24 09:16:56,444 - mail.log - INFO - ('127.0.0.1', 49421) handling connection
+2025-06-24 09:16:56,444 - mail.log - INFO - ('127.0.0.1', 49421) EOF received
+2025-06-24 09:16:56,444 - smtp_server - INFO - SMTP 服务器已在 127.0.0.1:1025 启动...
+2025-06-24 09:16:56,444 - mail.log - INFO - ('127.0.0.1', 49421) Connection lost during _handle_client()
+2025-06-24 09:16:56,444 - mail.log - INFO - ('127.0.0.1', 49421) connection lost
+2025-06-24 09:17:00,625 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 09:17:00,625 - mail.log - INFO - Peer: ('127.0.0.1', 49426)
+2025-06-24 09:17:00,625 - mail.log - INFO - ('127.0.0.1', 49426) handling connection
+2025-06-24 09:17:00,628 - mail.log - INFO - ('127.0.0.1', 49426) >> b'ehlo [10.11.188.142]'
+2025-06-24 09:17:00,630 - mail.log - INFO - ('127.0.0.1', 49426) >> b'mail FROM:<test@example.com> size=196'
+2025-06-24 09:17:00,630 - mail.log - INFO - ('127.0.0.1', 49426) sender: test@example.com
+2025-06-24 09:17:00,630 - mail.log - INFO - ('127.0.0.1', 49426) >> b'rcpt TO:<user@example.com>'
+2025-06-24 09:17:00,630 - mail.log - INFO - ('127.0.0.1', 49426) recip: user@example.com
+2025-06-24 09:17:00,631 - mail.log - INFO - ('127.0.0.1', 49426) >> b'data'
+2025-06-24 09:17:00,631 - smtp_server - INFO - 收到邮件: From <test@example.com> To <['user@example.com']>
+2025-06-24 09:17:00,865 - ai_service - ERROR - AI_SERVICE: 预测时发生错误: 400, message='Bad Request', url='https://api.siliconflow.cn/v1/chat/completions'
+2025-06-24 09:17:00,865 - smtp_server - INFO - 结果: ALLOWED (Passed all checks) - From: test@example.com
+2025-06-24 09:17:00,882 - mail.log - INFO - ('127.0.0.1', 49426) >> b'QUIT'
+2025-06-24 09:17:00,882 - mail.log - INFO - ('127.0.0.1', 49426) Connection lost during _handle_client()
+2025-06-24 09:17:00,882 - mail.log - INFO - ('127.0.0.1', 49426) connection lost
+2025-06-24 09:17:23,501 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 09:17:23,501 - mail.log - INFO - Peer: ('127.0.0.1', 49440)
+2025-06-24 09:17:23,501 - mail.log - INFO - ('127.0.0.1', 49440) handling connection
+2025-06-24 09:17:23,501 - mail.log - INFO - ('127.0.0.1', 49440) EOF received
+2025-06-24 09:17:23,501 - smtp_server - INFO - SMTP 服务器已在 127.0.0.1:1025 启动...
+2025-06-24 09:17:23,501 - mail.log - INFO - ('127.0.0.1', 49440) Connection lost during _handle_client()
+2025-06-24 09:17:23,503 - mail.log - INFO - ('127.0.0.1', 49440) connection lost
+2025-06-24 09:17:25,928 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 09:17:25,928 - mail.log - INFO - Peer: ('127.0.0.1', 49445)
+2025-06-24 09:17:25,928 - mail.log - INFO - ('127.0.0.1', 49445) handling connection
+2025-06-24 09:17:25,932 - mail.log - INFO - ('127.0.0.1', 49445) >> b'ehlo [10.11.188.142]'
+2025-06-24 09:17:25,933 - mail.log - INFO - ('127.0.0.1', 49445) >> b'mail FROM:<test@example.com> size=196'
+2025-06-24 09:17:25,933 - mail.log - INFO - ('127.0.0.1', 49445) sender: test@example.com
+2025-06-24 09:17:25,933 - mail.log - INFO - ('127.0.0.1', 49445) >> b'rcpt TO:<user@example.com>'
+2025-06-24 09:17:25,933 - mail.log - INFO - ('127.0.0.1', 49445) recip: user@example.com
+2025-06-24 09:17:25,934 - mail.log - INFO - ('127.0.0.1', 49445) >> b'data'
+2025-06-24 09:17:25,934 - smtp_server - INFO - 收到邮件: From <test@example.com> To <['user@example.com']>
+2025-06-24 09:17:31,229 - ai_service - INFO - AI_SERVICE: 原始回复: '0'
+2025-06-24 09:17:31,230 - smtp_server - INFO - 结果: ALLOWED (Passed all checks) - From: test@example.com
+2025-06-24 09:17:31,241 - mail.log - INFO - ('127.0.0.1', 49445) >> b'QUIT'
+2025-06-24 09:17:31,242 - mail.log - INFO - ('127.0.0.1', 49445) Connection lost during _handle_client()
+2025-06-24 09:17:31,242 - mail.log - INFO - ('127.0.0.1', 49445) connection lost
+2025-06-24 09:17:50,956 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 09:17:50,956 - mail.log - INFO - Peer: ('127.0.0.1', 49460)
+2025-06-24 09:17:50,956 - mail.log - INFO - ('127.0.0.1', 49460) handling connection
+2025-06-24 09:17:50,957 - mail.log - INFO - ('127.0.0.1', 49460) EOF received
+2025-06-24 09:17:50,957 - smtp_server - INFO - SMTP 服务器已在 127.0.0.1:1025 启动...
+2025-06-24 09:17:50,957 - mail.log - INFO - ('127.0.0.1', 49460) Connection lost during _handle_client()
+2025-06-24 09:17:50,957 - mail.log - INFO - ('127.0.0.1', 49460) connection lost
+2025-06-24 09:17:53,721 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 09:17:53,721 - mail.log - INFO - Peer: ('127.0.0.1', 49464)
+2025-06-24 09:17:53,722 - mail.log - INFO - ('127.0.0.1', 49464) handling connection
+2025-06-24 09:17:53,724 - mail.log - INFO - ('127.0.0.1', 49464) >> b'ehlo [10.11.188.142]'
+2025-06-24 09:17:53,725 - mail.log - INFO - ('127.0.0.1', 49464) >> b'mail FROM:<test@example.com> size=196'
+2025-06-24 09:17:53,725 - mail.log - INFO - ('127.0.0.1', 49464) sender: test@example.com
+2025-06-24 09:17:53,725 - mail.log - INFO - ('127.0.0.1', 49464) >> b'rcpt TO:<user@example.com>'
+2025-06-24 09:17:53,725 - mail.log - INFO - ('127.0.0.1', 49464) recip: user@example.com
+2025-06-24 09:17:53,725 - mail.log - INFO - ('127.0.0.1', 49464) >> b'data'
+2025-06-24 09:17:53,726 - smtp_server - INFO - 收到邮件: From <test@example.com> To <['user@example.com']>
+2025-06-24 09:17:54,174 - ai_service - INFO - AI_SERVICE: 原始回复: '0'
+2025-06-24 09:17:54,175 - smtp_server - INFO - 结果: ALLOWED (Passed all checks) - From: test@example.com
+2025-06-24 09:17:54,191 - mail.log - INFO - ('127.0.0.1', 49464) >> b'QUIT'
+2025-06-24 09:17:54,191 - mail.log - INFO - ('127.0.0.1', 49464) Connection lost during _handle_client()
+2025-06-24 09:17:54,191 - mail.log - INFO - ('127.0.0.1', 49464) connection lost
+2025-06-24 09:21:44,133 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 09:21:44,133 - mail.log - INFO - Peer: ('127.0.0.1', 49528)
+2025-06-24 09:21:44,134 - mail.log - INFO - ('127.0.0.1', 49528) handling connection
+2025-06-24 09:21:44,134 - mail.log - INFO - ('127.0.0.1', 49528) EOF received
+2025-06-24 09:21:44,134 - smtp_server - INFO - SMTP 服务器已在 127.0.0.1:1025 启动...
+2025-06-24 09:21:44,134 - mail.log - INFO - ('127.0.0.1', 49528) Connection lost during _handle_client()
+2025-06-24 09:21:44,134 - mail.log - INFO - ('127.0.0.1', 49528) connection lost
+2025-06-24 11:33:01,313 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 11:33:01,314 - mail.log - INFO - Peer: ('127.0.0.1', 49352)
+2025-06-24 11:33:01,314 - mail.log - INFO - ('127.0.0.1', 49352) handling connection
+2025-06-24 11:33:01,314 - mail.log - INFO - ('127.0.0.1', 49352) EOF received
+2025-06-24 11:33:01,314 - smtp_server - INFO - SMTP 服务器已在 127.0.0.1:1025 启动...
+2025-06-24 11:33:01,314 - mail.log - INFO - ('127.0.0.1', 49352) Connection lost during _handle_client()
+2025-06-24 11:33:01,314 - mail.log - INFO - ('127.0.0.1', 49352) connection lost
+2025-06-24 12:05:53,438 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 12:05:53,439 - mail.log - INFO - Peer: ('127.0.0.1', 50516)
+2025-06-24 12:05:53,439 - mail.log - INFO - ('127.0.0.1', 50516) handling connection
+2025-06-24 12:05:53,445 - mail.log - INFO - ('127.0.0.1', 50516) >> b'ehlo [10.11.188.142]'
+2025-06-24 12:05:53,445 - mail.log - INFO - ('127.0.0.1', 50516) >> b'mail FROM:<test@example.com> size=205'
+2025-06-24 12:05:53,447 - mail.log - INFO - ('127.0.0.1', 50516) sender: test@example.com
+2025-06-24 12:05:53,447 - mail.log - INFO - ('127.0.0.1', 50516) >> b'rcpt TO:<user@example.com>'
+2025-06-24 12:05:53,447 - mail.log - INFO - ('127.0.0.1', 50516) recip: user@example.com
+2025-06-24 12:05:53,447 - mail.log - INFO - ('127.0.0.1', 50516) >> b'data'
+2025-06-24 12:05:53,448 - smtp_server - INFO - 收到邮件: From <test@example.com> To <['user@example.com']>
+2025-06-24 12:05:53,450 - smtp_server - WARNING - 结果: BLOCKED (Keyword: 中奖) - From: test@example.com
+2025-06-24 12:05:53,457 - mail.log - INFO - ('127.0.0.1', 50516) >> b'rset'
+2025-06-24 12:05:53,457 - mail.log - INFO - ('127.0.0.1', 50516) >> b'QUIT'
+2025-06-24 12:05:53,457 - mail.log - INFO - ('127.0.0.1', 50516) Connection lost during _handle_client()
+2025-06-24 12:05:53,457 - mail.log - INFO - ('127.0.0.1', 50516) connection lost
+2025-06-24 17:23:31,186 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 17:23:31,186 - mail.log - INFO - Peer: ('127.0.0.1', 54991)
+2025-06-24 17:23:31,186 - mail.log - INFO - ('127.0.0.1', 54991) handling connection
+2025-06-24 17:23:31,186 - mail.log - INFO - ('127.0.0.1', 54991) EOF received
+2025-06-24 17:23:31,186 - smtp_server - INFO - SMTP 服务器已在 127.0.0.1:1025 启动...
+2025-06-24 17:23:31,186 - mail.log - INFO - ('127.0.0.1', 54991) Connection lost during _handle_client()
+2025-06-24 17:23:31,186 - mail.log - INFO - ('127.0.0.1', 54991) connection lost
+2025-06-24 17:23:40,679 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 17:23:40,679 - mail.log - INFO - Peer: ('127.0.0.1', 55001)
+2025-06-24 17:23:40,679 - mail.log - INFO - ('127.0.0.1', 55001) handling connection
+2025-06-24 17:23:40,683 - mail.log - INFO - ('127.0.0.1', 55001) >> b'ehlo [10.11.188.142]'
+2025-06-24 17:23:40,683 - mail.log - INFO - ('127.0.0.1', 55001) >> b'mail FROM:<test@example.com> size=196'
+2025-06-24 17:23:40,683 - mail.log - INFO - ('127.0.0.1', 55001) sender: test@example.com
+2025-06-24 17:23:40,685 - mail.log - INFO - ('127.0.0.1', 55001) >> b'rcpt TO:<user@example.com>'
+2025-06-24 17:23:40,685 - mail.log - INFO - ('127.0.0.1', 55001) recip: user@example.com
+2025-06-24 17:23:40,685 - mail.log - INFO - ('127.0.0.1', 55001) >> b'data'
+2025-06-24 17:23:40,685 - smtp_server - INFO - 收到邮件: From <test@example.com> To <['user@example.com']>
+2025-06-24 17:23:41,141 - ai_service - INFO - AI_SERVICE: 原始回复: '0'
+2025-06-24 17:23:41,151 - smtp_server - INFO - 结果: ALLOWED (Passed all checks) - From: test@example.com
+2025-06-24 17:23:41,159 - mail.log - INFO - ('127.0.0.1', 55001) >> b'QUIT'
+2025-06-24 17:23:41,159 - mail.log - INFO - ('127.0.0.1', 55001) Connection lost during _handle_client()
+2025-06-24 17:23:41,159 - mail.log - INFO - ('127.0.0.1', 55001) connection lost
+2025-06-24 17:25:01,985 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 17:25:01,986 - mail.log - INFO - Peer: ('127.0.0.1', 55038)
+2025-06-24 17:25:01,986 - mail.log - INFO - ('127.0.0.1', 55038) handling connection
+2025-06-24 17:25:01,986 - mail.log - INFO - ('127.0.0.1', 55038) >> b'ehlo [10.11.188.142]'
+2025-06-24 17:25:01,987 - mail.log - INFO - ('127.0.0.1', 55038) >> b'mail FROM:<test@example.com> size=190'
+2025-06-24 17:25:01,987 - mail.log - INFO - ('127.0.0.1', 55038) sender: test@example.com
+2025-06-24 17:25:01,987 - mail.log - INFO - ('127.0.0.1', 55038) >> b'rcpt TO:<user@example.com>'
+2025-06-24 17:25:01,987 - mail.log - INFO - ('127.0.0.1', 55038) recip: user@example.com
+2025-06-24 17:25:01,987 - mail.log - INFO - ('127.0.0.1', 55038) >> b'data'
+2025-06-24 17:25:01,988 - smtp_server - INFO - 收到邮件: From <test@example.com> To <['user@example.com']>
+2025-06-24 17:25:01,989 - smtp_server - WARNING - 结果: BLOCKED (Keyword: 中奖) - From: test@example.com
+2025-06-24 17:25:01,997 - mail.log - INFO - ('127.0.0.1', 55038) >> b'rset'
+2025-06-24 17:25:01,997 - mail.log - INFO - ('127.0.0.1', 55038) >> b'QUIT'
+2025-06-24 17:25:01,997 - mail.log - INFO - ('127.0.0.1', 55038) Connection lost during _handle_client()
+2025-06-24 17:25:01,997 - mail.log - INFO - ('127.0.0.1', 55038) connection lost
+2025-06-24 17:25:28,377 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 17:25:28,377 - mail.log - INFO - Peer: ('127.0.0.1', 55056)
+2025-06-24 17:25:28,377 - mail.log - INFO - ('127.0.0.1', 55056) handling connection
+2025-06-24 17:25:28,388 - mail.log - INFO - ('127.0.0.1', 55056) >> b'ehlo [10.11.188.142]'
+2025-06-24 17:25:28,389 - mail.log - INFO - ('127.0.0.1', 55056) >> b'mail FROM:<test@example.com> size=288'
+2025-06-24 17:25:28,389 - mail.log - INFO - ('127.0.0.1', 55056) sender: test@example.com
+2025-06-24 17:25:28,389 - mail.log - INFO - ('127.0.0.1', 55056) >> b'rcpt TO:<user@example.com>'
+2025-06-24 17:25:28,389 - mail.log - INFO - ('127.0.0.1', 55056) recip: user@example.com
+2025-06-24 17:25:28,389 - mail.log - INFO - ('127.0.0.1', 55056) >> b'data'
+2025-06-24 17:25:28,389 - smtp_server - INFO - 收到邮件: From <test@example.com> To <['user@example.com']>
+2025-06-24 17:25:28,913 - ai_service - INFO - AI_SERVICE: 原始回复: '首先，'
+2025-06-24 17:25:28,913 - smtp_server - INFO - 结果: ALLOWED (Passed all checks) - From: test@example.com
+2025-06-24 17:25:28,920 - mail.log - INFO - ('127.0.0.1', 55056) >> b'QUIT'
+2025-06-24 17:25:28,922 - mail.log - INFO - ('127.0.0.1', 55056) Connection lost during _handle_client()
+2025-06-24 17:25:28,922 - mail.log - INFO - ('127.0.0.1', 55056) connection lost
+2025-06-24 17:26:45,416 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 17:26:45,416 - mail.log - INFO - Peer: ('127.0.0.1', 55086)
+2025-06-24 17:26:45,416 - mail.log - INFO - ('127.0.0.1', 55086) handling connection
+2025-06-24 17:26:45,417 - mail.log - INFO - ('127.0.0.1', 55086) >> b'ehlo [10.11.188.142]'
+2025-06-24 17:26:45,417 - mail.log - INFO - ('127.0.0.1', 55086) >> b'mail FROM:<test@example.com> size=328'
+2025-06-24 17:26:45,417 - mail.log - INFO - ('127.0.0.1', 55086) sender: test@example.com
+2025-06-24 17:26:45,417 - mail.log - INFO - ('127.0.0.1', 55086) >> b'rcpt TO:<user@example.com>'
+2025-06-24 17:26:45,419 - mail.log - INFO - ('127.0.0.1', 55086) recip: user@example.com
+2025-06-24 17:26:45,419 - mail.log - INFO - ('127.0.0.1', 55086) >> b'data'
+2025-06-24 17:26:45,419 - smtp_server - INFO - 收到邮件: From <test@example.com> To <['user@example.com']>
+2025-06-24 17:26:45,420 - smtp_server - WARNING - 结果: BLOCKED (Keyword: 回复td退订) - From: test@example.com
+2025-06-24 17:26:45,428 - mail.log - INFO - ('127.0.0.1', 55086) >> b'rset'
+2025-06-24 17:26:45,428 - mail.log - INFO - ('127.0.0.1', 55086) >> b'QUIT'
+2025-06-24 17:26:45,428 - mail.log - INFO - ('127.0.0.1', 55086) Connection lost during _handle_client()
+2025-06-24 17:26:45,428 - mail.log - INFO - ('127.0.0.1', 55086) connection lost
+2025-06-24 17:26:58,207 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 17:26:58,208 - mail.log - INFO - Peer: ('127.0.0.1', 55105)
+2025-06-24 17:26:58,208 - mail.log - INFO - ('127.0.0.1', 55105) handling connection
+2025-06-24 17:26:58,208 - mail.log - INFO - ('127.0.0.1', 55105) >> b'ehlo [10.11.188.142]'
+2025-06-24 17:26:58,209 - mail.log - INFO - ('127.0.0.1', 55105) >> b'mail FROM:<test@example.com> size=328'
+2025-06-24 17:26:58,209 - mail.log - INFO - ('127.0.0.1', 55105) sender: test@example.com
+2025-06-24 17:26:58,209 - mail.log - INFO - ('127.0.0.1', 55105) >> b'rcpt TO:<user@example.com>'
+2025-06-24 17:26:58,209 - mail.log - INFO - ('127.0.0.1', 55105) recip: user@example.com
+2025-06-24 17:26:58,209 - mail.log - INFO - ('127.0.0.1', 55105) >> b'data'
+2025-06-24 17:26:58,209 - smtp_server - INFO - 收到邮件: From <test@example.com> To <['user@example.com']>
+2025-06-24 17:26:58,801 - ai_service - INFO - AI_SERVICE: 原始回复: '0'
+2025-06-24 17:26:58,801 - smtp_server - INFO - 结果: ALLOWED (Passed all checks) - From: test@example.com
+2025-06-24 17:26:58,817 - mail.log - INFO - ('127.0.0.1', 55105) >> b'QUIT'
+2025-06-24 17:26:58,818 - mail.log - INFO - ('127.0.0.1', 55105) Connection lost during _handle_client()
+2025-06-24 17:26:58,818 - mail.log - INFO - ('127.0.0.1', 55105) connection lost
+2025-06-24 17:27:36,411 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 17:27:36,411 - mail.log - INFO - Peer: ('127.0.0.1', 55124)
+2025-06-24 17:27:36,411 - mail.log - INFO - ('127.0.0.1', 55124) handling connection
+2025-06-24 17:27:36,412 - mail.log - INFO - ('127.0.0.1', 55124) >> b'ehlo [10.11.188.142]'
+2025-06-24 17:27:36,412 - mail.log - INFO - ('127.0.0.1', 55124) >> b'mail FROM:<test@example.com> size=320'
+2025-06-24 17:27:36,413 - mail.log - INFO - ('127.0.0.1', 55124) sender: test@example.com
+2025-06-24 17:27:36,413 - mail.log - INFO - ('127.0.0.1', 55124) >> b'rcpt TO:<user@example.com>'
+2025-06-24 17:27:36,413 - mail.log - INFO - ('127.0.0.1', 55124) recip: user@example.com
+2025-06-24 17:27:36,413 - mail.log - INFO - ('127.0.0.1', 55124) >> b'data'
+2025-06-24 17:27:36,413 - smtp_server - INFO - 收到邮件: From <test@example.com> To <['user@example.com']>
+2025-06-24 17:27:36,889 - ai_service - INFO - AI_SERVICE: 原始回复: '1'
+2025-06-24 17:27:36,889 - smtp_server - WARNING - 结果: BLOCKED (AI Model) - From: test@example.com
+2025-06-24 17:27:36,896 - mail.log - INFO - ('127.0.0.1', 55124) >> b'rset'
+2025-06-24 17:27:36,896 - mail.log - INFO - ('127.0.0.1', 55124) >> b'QUIT'
+2025-06-24 17:27:36,896 - mail.log - INFO - ('127.0.0.1', 55124) Connection lost during _handle_client()
+2025-06-24 17:27:36,896 - mail.log - INFO - ('127.0.0.1', 55124) connection lost
+2025-06-24 17:28:54,745 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 17:28:54,746 - mail.log - INFO - Peer: ('127.0.0.1', 55157)
+2025-06-24 17:28:54,746 - mail.log - INFO - ('127.0.0.1', 55157) handling connection
+2025-06-24 17:28:54,760 - mail.log - INFO - ('127.0.0.1', 55157) >> b'ehlo [10.11.188.142]'
+2025-06-24 17:28:54,761 - mail.log - INFO - ('127.0.0.1', 55157) >> b'mail FROM:<trusted@company.com> size=193'
+2025-06-24 17:28:54,761 - mail.log - INFO - ('127.0.0.1', 55157) sender: trusted@company.com
+2025-06-24 17:28:54,762 - mail.log - INFO - ('127.0.0.1', 55157) >> b'rcpt TO:<user@example.com>'
+2025-06-24 17:28:54,762 - mail.log - INFO - ('127.0.0.1', 55157) recip: user@example.com
+2025-06-24 17:28:54,762 - mail.log - INFO - ('127.0.0.1', 55157) >> b'data'
+2025-06-24 17:28:54,763 - smtp_server - INFO - 收到邮件: From <trusted@company.com> To <['user@example.com']>
+2025-06-24 17:28:54,764 - smtp_server - INFO - 结果: ALLOWED (Whitelist) - From: trusted@company.com
+2025-06-24 17:28:54,771 - mail.log - INFO - ('127.0.0.1', 55157) >> b'QUIT'
+2025-06-24 17:28:54,771 - mail.log - INFO - ('127.0.0.1', 55157) Connection lost during _handle_client()
+2025-06-24 17:28:54,771 - mail.log - INFO - ('127.0.0.1', 55157) connection lost
+2025-06-24 17:29:22,183 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 17:29:22,184 - mail.log - INFO - Peer: ('127.0.0.1', 55171)
+2025-06-24 17:29:22,184 - mail.log - INFO - ('127.0.0.1', 55171) handling connection
+2025-06-24 17:29:22,196 - mail.log - INFO - ('127.0.0.1', 55171) >> b'ehlo [10.11.188.142]'
+2025-06-24 17:29:22,197 - mail.log - INFO - ('127.0.0.1', 55171) >> b'mail FROM:<badguy@example.com> size=198'
+2025-06-24 17:29:22,197 - mail.log - INFO - ('127.0.0.1', 55171) sender: badguy@example.com
+2025-06-24 17:29:22,197 - mail.log - INFO - ('127.0.0.1', 55171) >> b'rcpt TO:<user@example.com>'
+2025-06-24 17:29:22,198 - mail.log - INFO - ('127.0.0.1', 55171) recip: user@example.com
+2025-06-24 17:29:22,198 - mail.log - INFO - ('127.0.0.1', 55171) >> b'data'
+2025-06-24 17:29:22,199 - smtp_server - INFO - 收到邮件: From <badguy@example.com> To <['user@example.com']>
+2025-06-24 17:29:22,201 - smtp_server - WARNING - 结果: BLOCKED (Blacklist) - From: badguy@example.com
+2025-06-24 17:29:22,210 - mail.log - INFO - ('127.0.0.1', 55171) >> b'rset'
+2025-06-24 17:29:22,211 - mail.log - INFO - ('127.0.0.1', 55171) >> b'QUIT'
+2025-06-24 17:29:22,211 - mail.log - INFO - ('127.0.0.1', 55171) Connection lost during _handle_client()
+2025-06-24 17:29:22,211 - mail.log - INFO - ('127.0.0.1', 55171) connection lost
+2025-06-24 17:49:56,869 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-24 17:49:56,870 - mail.log - INFO - Peer: ('127.0.0.1', 55612)
+2025-06-24 17:49:56,870 - mail.log - INFO - ('127.0.0.1', 55612) handling connection
+2025-06-24 17:49:56,870 - mail.log - INFO - ('127.0.0.1', 55612) EOF received
+2025-06-24 17:49:56,870 - smtp_server - INFO - SMTP 服务器已在 127.0.0.1:1025 启动...
+2025-06-24 17:49:56,870 - mail.log - INFO - ('127.0.0.1', 55612) Connection lost during _handle_client()
+2025-06-24 17:49:56,870 - mail.log - INFO - ('127.0.0.1', 55612) connection lost
+2025-06-28 20:13:41,315 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-28 20:13:41,315 - mail.log - INFO - Peer: ('127.0.0.1', 3001)
+2025-06-28 20:13:41,315 - mail.log - INFO - ('127.0.0.1', 3001) handling connection
+2025-06-28 20:13:41,316 - mail.log - INFO - ('127.0.0.1', 3001) EOF received
+2025-06-28 20:13:41,316 - smtp_server - INFO - SMTP 服务器已在 127.0.0.1:11025 启动...
+2025-06-28 20:13:41,316 - mail.log - INFO - ('127.0.0.1', 3001) Connection lost during _handle_client()
+2025-06-28 20:13:41,316 - mail.log - INFO - ('127.0.0.1', 3001) connection lost
+2025-06-29 14:54:26,732 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-29 14:54:26,733 - mail.log - INFO - Peer: ('127.0.0.1', 1248)
+2025-06-29 14:54:26,733 - mail.log - INFO - ('127.0.0.1', 1248) handling connection
+2025-06-29 14:54:26,733 - smtp_server - INFO - SMTP 服务器已在 127.0.0.1:11025 启动...
+2025-06-29 14:54:26,734 - mail.log - INFO - ('127.0.0.1', 1248) EOF received
+2025-06-29 14:54:26,734 - mail.log - INFO - ('127.0.0.1', 1248) Connection lost during _handle_client()
+2025-06-29 14:54:26,734 - mail.log - INFO - ('127.0.0.1', 1248) connection lost
+2025-06-29 15:03:44,824 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-29 15:03:44,825 - mail.log - INFO - Peer: ('127.0.0.1', 1742)
+2025-06-29 15:03:44,825 - mail.log - INFO - ('127.0.0.1', 1742) handling connection
+2025-06-29 15:03:44,836 - mail.log - INFO - ('127.0.0.1', 1742) >> b'ehlo [192.168.170.4]'
+2025-06-29 15:03:44,838 - mail.log - INFO - ('127.0.0.1', 1742) >> b'mail FROM:<test@example.com> size=196'
+2025-06-29 15:03:44,839 - mail.log - INFO - ('127.0.0.1', 1742) sender: test@example.com
+2025-06-29 15:03:44,839 - mail.log - INFO - ('127.0.0.1', 1742) >> b'rcpt TO:<user@example.com>'
+2025-06-29 15:03:44,839 - mail.log - INFO - ('127.0.0.1', 1742) recip: user@example.com
+2025-06-29 15:03:44,839 - mail.log - INFO - ('127.0.0.1', 1742) >> b'data'
+2025-06-29 15:03:44,840 - smtp_server - INFO - 收到邮件: From <test@example.com> To <['user@example.com']>
+2025-06-29 15:03:45,897 - ai_service - INFO - AI_SERVICE: 原始回复: '0'
+2025-06-29 15:03:45,898 - smtp_server - INFO - 结果: ALLOWED (Passed all checks) - From: test@example.com
+2025-06-29 15:03:45,905 - mail.log - INFO - ('127.0.0.1', 1742) >> b'QUIT'
+2025-06-29 15:03:45,905 - mail.log - INFO - ('127.0.0.1', 1742) Connection lost during _handle_client()
+2025-06-29 15:03:45,905 - mail.log - INFO - ('127.0.0.1', 1742) connection lost
+2025-06-29 15:04:01,696 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-29 15:04:01,697 - mail.log - INFO - Peer: ('127.0.0.1', 1774)
+2025-06-29 15:04:01,698 - mail.log - INFO - ('127.0.0.1', 1774) handling connection
+2025-06-29 15:04:01,708 - mail.log - INFO - ('127.0.0.1', 1774) >> b'ehlo [192.168.170.4]'
+2025-06-29 15:04:01,709 - mail.log - INFO - ('127.0.0.1', 1774) >> b'mail FROM:<badguy@example.com> size=198'
+2025-06-29 15:04:01,710 - mail.log - INFO - ('127.0.0.1', 1774) sender: badguy@example.com
+2025-06-29 15:04:01,710 - mail.log - INFO - ('127.0.0.1', 1774) >> b'rcpt TO:<user@example.com>'
+2025-06-29 15:04:01,711 - mail.log - INFO - ('127.0.0.1', 1774) recip: user@example.com
+2025-06-29 15:04:01,711 - mail.log - INFO - ('127.0.0.1', 1774) >> b'data'
+2025-06-29 15:04:01,712 - smtp_server - INFO - 收到邮件: From <badguy@example.com> To <['user@example.com']>
+2025-06-29 15:04:01,714 - smtp_server - WARNING - 结果: BLOCKED (Blacklist) - From: badguy@example.com
+2025-06-29 15:04:01,718 - mail.log - INFO - ('127.0.0.1', 1774) >> b'rset'
+2025-06-29 15:04:01,719 - mail.log - INFO - ('127.0.0.1', 1774) >> b'QUIT'
+2025-06-29 15:04:01,719 - mail.log - INFO - ('127.0.0.1', 1774) Connection lost during _handle_client()
+2025-06-29 15:04:01,719 - mail.log - INFO - ('127.0.0.1', 1774) connection lost
+2025-06-29 15:04:33,062 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-29 15:04:33,062 - mail.log - INFO - Peer: ('127.0.0.1', 1811)
+2025-06-29 15:04:33,062 - mail.log - INFO - ('127.0.0.1', 1811) handling connection
+2025-06-29 15:04:33,074 - mail.log - INFO - ('127.0.0.1', 1811) >> b'ehlo [192.168.170.4]'
+2025-06-29 15:04:33,076 - mail.log - INFO - ('127.0.0.1', 1811) >> b'mail FROM:<test@example.com> size=190'
+2025-06-29 15:04:33,076 - mail.log - INFO - ('127.0.0.1', 1811) sender: test@example.com
+2025-06-29 15:04:33,076 - mail.log - INFO - ('127.0.0.1', 1811) >> b'rcpt TO:<user@example.com>'
+2025-06-29 15:04:33,077 - mail.log - INFO - ('127.0.0.1', 1811) recip: user@example.com
+2025-06-29 15:04:33,077 - mail.log - INFO - ('127.0.0.1', 1811) >> b'data'
+2025-06-29 15:04:33,078 - smtp_server - INFO - 收到邮件: From <test@example.com> To <['user@example.com']>
+2025-06-29 15:04:33,080 - smtp_server - WARNING - 结果: BLOCKED (Keyword: 中奖) - From: test@example.com
+2025-06-29 15:04:33,084 - mail.log - INFO - ('127.0.0.1', 1811) >> b'rset'
+2025-06-29 15:04:33,085 - mail.log - INFO - ('127.0.0.1', 1811) >> b'QUIT'
+2025-06-29 15:04:33,085 - mail.log - INFO - ('127.0.0.1', 1811) Connection lost during _handle_client()
+2025-06-29 15:04:33,085 - mail.log - INFO - ('127.0.0.1', 1811) connection lost
+2025-06-29 15:04:56,916 - mail.log - INFO - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-06-29 15:04:56,917 - mail.log - INFO - Peer: ('127.0.0.1', 1856)
+2025-06-29 15:04:56,918 - mail.log - INFO - ('127.0.0.1', 1856) handling connection
+2025-06-29 15:04:56,921 - mail.log - INFO - ('127.0.0.1', 1856) >> b'ehlo [192.168.170.4]'
+2025-06-29 15:04:56,922 - mail.log - INFO - ('127.0.0.1', 1856) >> b'mail FROM:<trusted@company.com> size=193'
+2025-06-29 15:04:56,923 - mail.log - INFO - ('127.0.0.1', 1856) sender: trusted@company.com
+2025-06-29 15:04:56,924 - mail.log - INFO - ('127.0.0.1', 1856) >> b'rcpt TO:<user@example.com>'
+2025-06-29 15:04:56,925 - mail.log - INFO - ('127.0.0.1', 1856) recip: user@example.com
+2025-06-29 15:04:56,926 - mail.log - INFO - ('127.0.0.1', 1856) >> b'data'
+2025-06-29 15:04:56,926 - smtp_server - INFO - 收到邮件: From <trusted@company.com> To <['user@example.com']>
+2025-06-29 15:04:56,929 - smtp_server - INFO - 结果: ALLOWED (Whitelist) - From: trusted@company.com
+2025-06-29 15:04:56,934 - mail.log - INFO - ('127.0.0.1', 1856) >> b'QUIT'
+2025-06-29 15:04:56,935 - mail.log - INFO - ('127.0.0.1', 1856) Connection lost during _handle_client()
+2025-06-29 15:04:56,935 - mail.log - INFO - ('127.0.0.1', 1856) connection lost
